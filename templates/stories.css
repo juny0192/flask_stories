@@ -1,0 +1,47 @@
+@import "http://fonts.googleapis.com/css?family=Raleway";
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+div#submit_form {
+  width: 350px;
+  height: auto;
+  margin: 50px auto 0;
+  padding: 50px;
+  background-color: #eee;
+  color: #333;
+  border: 2px solid #c2d6ff;
+  border-radius: 40px 0 40px 0;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+input#place {
+  background-image: url(../images/icon_name.png);
+  background-repeat: no-repeat;
+  background-position: 6px;
+  border: 1px solid #dadada;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 35px;
+  width: 310px;
+  height: 30px;
+  font-size: 14px;
+}
+
+input#noun {
+  background-image: url(../images/email.png);
+  background-repeat: no-repeat;
+  background-position: 6px;
+  border: 1px solid #dadada;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 35px;
+  width: 310px;
+  height: 30px;
+  font-size: 14px;
+}
