@@ -1,13 +1,5 @@
-from flask import Flask, request, render_template
-
-app = Flask(__name__)
-
 """Madlibs Stories."""
 
-@app.route('/')
-def show_form():
-    return render_template('stories.html')
-    
 class Story:
     """Madlibs story.
 
@@ -25,9 +17,9 @@ class Story:
         'I love to eat a good mango.'
     """
 
-    def __init__(self, words, text):
+    def __init__(self, title, words, text):
         """Create story with words and template text."""
-
+        self.title = title
         self.prompts = words
         self.template = text
 
@@ -46,9 +38,9 @@ class Story:
 
 
 story = Story(
-    ["place", "noun", "verb", "adjective", "plural_noun"],
-    """Once upon a time in a long-ago {place}, there lived a
-       large {adjective} {noun}. It loved to {verb} {plural_noun}."""
+    "The Story", ["Place", "Noun", "Verb", "Adjective", "Plural_noun"],
+    """Once upon a time in a long-ago {Place}, there lived a
+       large {Adjective} {Noun}. It loved to {Verb} {Plural_noun}."""
 )
 
 

@@ -4,15 +4,18 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-div#submit_form {
+div {
   width: 350px;
   height: auto;
   margin: 50px auto 0;
   padding: 50px;
   background-color: #eee;
   color: #333;
-  border: 2px solid #c2d6ff;
   border-radius: 40px 0 40px 0;
+}
+
+h1 {
+  text-align: center;
 }
 
 label {
@@ -20,10 +23,7 @@ label {
   font-weight: 700;
 }
 
-input#place {
-  background-image: url(../images/icon_name.png);
-  background-repeat: no-repeat;
-  background-position: 6px;
+input {
   border: 1px solid #dadada;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -33,15 +33,17 @@ input#place {
   font-size: 14px;
 }
 
-input#noun {
-  background-image: url(../images/email.png);
-  background-repeat: no-repeat;
-  background-position: 6px;
-  border: 1px solid #dadada;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 35px;
-  width: 310px;
-  height: 30px;
-  font-size: 14px;
+button {
+  background-color: #66b8cc;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 25px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #949494;
+  margin-left: 120px;
+}
+
+button:hover {
+  background-color: #252b7c;
+  cursor: pointer;
 }
